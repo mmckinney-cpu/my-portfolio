@@ -1,118 +1,236 @@
+/* COLOR PALETTE AND SPACING */
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+:root {
+    --primary: #234E52;
+    --secondary: #E6B566;
+    --background: #F7F5F0;
+    --white: #FFFFFF;
+    --text: #263238;
 
-    <title>Monjhara McKinney | IT Portfolio</title>
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 40px;
+    --space-6: 48px;
+}
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+/* GENERAL STYLING */
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+* {
+    box-sizing: border-box;
+}
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+}
 
-<body>
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+}
 
-    <header>
-        <div class="header-container">
-            <h1>Monjhara McKinney</h1>
+h2 {
+    margin-bottom: var(--space-3);
+}
 
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects / Work</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+p {
+    margin-bottom: var(--space-2);
+}
 
-    <main>
+a {
+    color: var(--primary);
+}
 
-        <section id="hero">
-            <h2>IT Professional & Web Developer</h2>
+/* HEADER */
 
-            <p>
-                Welcome to my professional portfolio.
-                I enjoy technology, solving problems,
-                and helping people use digital tools effectively.
-            </p>
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: var(--space-3);
+}
 
-            <a href="projects.html" class="button">
-                View My Work
-            </a>
-        </section>
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
 
-        <section class="content">
-            <h2>About Me</h2>
+header h1 {
+    color: var(--white);
+    font-size: 28px;
+    margin: 0;
+}
 
-            <h3>My Story</h3>
+/* NAVIGATION */
 
-            <p>
-                I enjoy learning about technology, solving problems,
-                and helping people use digital tools effectively.
-                This portfolio shares my interests in IT support,
-                networking, web development, and cloud computing.
-            </p>
-        </section>
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
 
-        <section class="content">
-            <h2>Skills and Interests</h2>
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
 
-            <div class="skills-grid">
+nav a:hover {
+    color: var(--secondary);
+}
 
-                <div class="skill-card">
-                    <h3>IT Support</h3>
-                    <p>IT support and troubleshooting</p>
-                </div>
+/* MAIN CONTENT */
 
-                <div class="skill-card">
-                    <h3>Networking</h3>
-                    <p>Networking fundamentals</p>
-                </div>
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: var(--space-4);
+}
 
-                <div class="skill-card">
-                    <h3>Web Development</h3>
-                    <p>Web development basics</p>
-                </div>
+/* HERO SECTION */
 
-                <div class="skill-card">
-                    <h3>Cloud Computing</h3>
-                    <p>Cloud computing concepts</p>
-                </div>
+#hero {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: var(--space-6);
+    border-radius: 12px;
+    margin-bottom: var(--space-5);
+}
 
-                <div class="skill-card">
-                    <h3>Documentation</h3>
-                    <p>Technical documentation</p>
-                </div>
+#hero h2 {
+    color: var(--white);
+    font-size: 36px;
+}
 
-            </div>
-        </section>
+#hero p {
+    max-width: 650px;
+    margin: 0 auto var(--space-4);
+}
 
-        <section class="content contact-section">
-            <h2>Get in Touch</h2>
+/* BUTTON */
 
-            <p>
-                Email:
-                <a href="mailto:monjharam@yahoo.com">
-                    monjharam@yahoo.com
-                </a>
-            </p>
-        </section>
+.button {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: var(--space-2) var(--space-3);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
 
-    </main>
+/* CONTENT SECTIONS */
 
-    <footer>
-        <p>
-            © 2026 Monjhara McKinney.
-            All rights reserved.
-        </p>
-    </footer>
+.content {
+    background-color: var(--white);
+    padding: var(--space-4);
+    margin-bottom: var(--space-4);
+    border-radius: 12px;
+    border: 1px solid #DEDAD0;
+}
 
-</body>
-</html>
+/* SKILLS GRID */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.skill-card {
+    background-color: var(--background);
+    padding: var(--space-3);
+    border-left: 4px solid var(--secondary);
+    border-radius: 8px;
+    min-width: 0;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+}
+
+/* CONTACT */
+
+.contact-section a {
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: var(--space-4);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* TABLET - 768px */
+
+@media screen and (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: var(--space-3);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #hero h2 {
+        font-size: 30px;
+    }
+}
+
+/* MOBILE - 480px */
+
+@media screen and (max-width: 480px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-2);
+    }
+
+    main {
+        padding: var(--space-2);
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        padding: var(--space-2);
+    }
+
+    #hero {
+        padding: var(--space-4) var(--space-2);
+    }
+
+    #hero h2 {
+        font-size: 26px;
+    }
+}

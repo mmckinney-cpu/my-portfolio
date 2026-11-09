@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monjhara McKinney | IT Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Monjhara McKinney</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects / Work</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero">
+            <h2>IT Professional & Web Developer</h2>
+
+            <p>
+                Welcome to my professional portfolio.
+                I enjoy technology, solving problems,
+                and helping people use digital tools effectively.
+            </p>
+
+            <a href="projects.html" class="button">
+                View My Work
+            </a>
+        </section>
+
+        <section class="content">
+            <h2>About Me</h2>
+
+            <h3>My Story</h3>
+
+            <p>
+                I enjoy learning about technology, solving problems,
+                and helping people use digital tools effectively.
+                This portfolio shares my interests in IT support,
+                networking, web development, and cloud computing.
+            </p>
+        </section>
+
+        <section class="content">
+            <h2>Skills and Interests</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>IT Support</h3>
+                    <p>IT support and troubleshooting</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Networking</h3>
+                    <p>Networking fundamentals</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>Web development basics</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Cloud Computing</h3>
+                    <p>Cloud computing concepts</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Documentation</h3>
+                    <p>Technical documentation</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="content contact-section">
+            <h2>Get in Touch</h2>
+
+            <p>
+                Email:
+                <a href="mailto:monjharam@yahoo.com">
+                    monjharam@yahoo.com
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Monjhara McKinney.
+            All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

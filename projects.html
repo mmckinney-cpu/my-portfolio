@@ -1,23 +1,60 @@
-<main>
-    <section class="content">
-        <h2>Projects / Work</h2>
-        <p>Welcome to my projects and professional work.</p>
-
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>IT Support</h3>
-                <p>Technology troubleshooting and support.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Networking</h3>
-                <p>Networking fundamentals and concepts.</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Web Development</h3>
-                <p>Building and styling websites.</p>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore IT and web development learning projects by Monjhara McKinney.">
+    <title>Projects | Monjhara McKinney</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="brand" href="index.html">Monjhara McKinney</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="projects.html" aria-current="page">Projects / Work</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </section>
-</main>
+    </header>
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">Selected work</p>
+            <h1>Projects and practice</h1>
+            <p>A collection of IT-focused concepts and learning projects. These examples represent areas I am exploring and developing.</p>
+        </section>
+        <section class="content">
+            <div class="project-grid">
+                <article class="project-card" id="network">
+                    <p class="eyebrow">Networking concept</p>
+                    <h2>Network Monitoring Tool</h2>
+                    <p>A concept for tracking network health, device availability, and service alerts from one place.</p>
+                    <h3>Focus areas</h3>
+                    <ul><li>Device and connectivity status</li><li>Basic uptime monitoring</li><li>Clear alert and issue summaries</li></ul>
+                </article>
+                <article class="project-card" id="helpdesk">
+                    <p class="eyebrow">IT support workflow</p>
+                    <h2>Help Desk Ticket System</h2>
+                    <p>A proposed support workflow for recording requests, prioritizing incidents, and keeping users informed.</p>
+                    <h3>Focus areas</h3>
+                    <ul><li>Ticket intake and categorization</li><li>Priority and status tracking</li><li>Resolution notes and follow-up</li></ul>
+                </article>
+                <article class="project-card" id="cloud">
+                    <p class="eyebrow">Cloud planning guide</p>
+                    <h2>Cloud Migration Guide</h2>
+                    <p>A planning checklist concept for helping a small organization prepare to move selected services to the cloud.</p>
+                    <h3>Focus areas</h3>
+                    <ul><li>Current environment assessment</li><li>Data backup and migration planning</li><li>Testing, security, and user readiness</li></ul>
+                </article>
+            </div>
+            <p class="project-note">These are portfolio learning concepts, not claims of deployed production systems.</p>
+        </section>
+    </main>
+    <footer><p>© 2026 Monjhara McKinney. All rights reserved.</p></footer>
+</body>
+</html>

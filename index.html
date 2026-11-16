@@ -3,104 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="The IT and web development portfolio of Monjhara McKinney.">
     <title>Monjhara McKinney | IT Portfolio</title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Monjhara McKinney</h1>
-        <p>IT Professional & Web Developer</p>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects / Work</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="brand" href="index.html">Monjhara McKinney</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="projects.html">Projects / Work</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
-
     <main>
-
         <section id="hero">
-            <h2>Welcome</h2>
-
-            <p>
-                I am passionate about information technology,
-                problem-solving, and creating useful digital solutions.
-            </p>
-
-            <a href="projects.html" class="button">
-                Explore My Projects
-            </a>
+            <p class="eyebrow">IT Professional &amp; Web Developer</p>
+            <h1>Technology, curiosity, and practical solutions.</h1>
+            <p>I am passionate about information technology, problem-solving, and creating useful digital experiences.</p>
+            <a href="projects.html" class="button">Explore My Projects</a>
         </section>
-
         <section class="content">
-
-            <h2>Featured IT Projects</h2>
-
-            <div class="project-grid">
-
-                <article class="project-card">
-                    <h3>Network Monitoring Tool</h3>
-
-                    <p>
-                        A concept project for monitoring network status,
-                        device availability, and alerts.
-                    </p>
-
-                    <a href="#network" class="project-link">
-                        View project details
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <h3>Help Desk Ticket System</h3>
-
-                    <p>
-                        A concept workflow for logging IT support issues,
-                        setting priorities, and tracking resolutions.
-                    </p>
-
-                    <a href="#helpdesk" class="project-link">
-                        View project details
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <h3>Cloud Migration Guide</h3>
-
-                    <p>
-                        A concept checklist for planning a small
-                        organization's move to cloud services.
-                    </p>
-
-                    <a href="#cloud" class="project-link">
-                        View project details
-                    </a>
-                </article>
-
+            <div class="section-heading">
+                <p class="eyebrow">What I'm exploring</p>
+                <h2>Featured IT Projects</h2>
             </div>
-
+            <div class="project-grid">
+                <article class="project-card">
+                    <p class="eyebrow">Networking concept</p>
+                    <h3>Network Monitoring Tool</h3>
+                    <p>A concept for monitoring network status, device availability, and alerts.</p>
+                    <a href="projects.html#network" class="project-link">View project details</a>
+                </article>
+                <article class="project-card">
+                    <p class="eyebrow">IT support workflow</p>
+                    <h3>Help Desk Ticket System</h3>
+                    <p>A concept workflow for logging support issues, setting priorities, and tracking resolutions.</p>
+                    <a href="projects.html#helpdesk" class="project-link">View project details</a>
+                </article>
+                <article class="project-card">
+                    <p class="eyebrow">Cloud planning</p>
+                    <h3>Cloud Migration Guide</h3>
+                    <p>A concept checklist for planning a small organization's move to cloud services.</p>
+                    <a href="projects.html#cloud" class="project-link">View project details</a>
+                </article>
+            </div>
         </section>
-
+        <section class="content about-preview">
+            <div>
+                <p class="eyebrow">A little about me</p>
+                <h2>Always learning. Always building.</h2>
+                <p>I'm interested in IT support, networking, web development, cloud computing, and making technology easier to use.</p>
+            </div>
+            <a class="text-link" href="about.html">More about me</a>
+        </section>
     </main>
-
-    <footer>
-        <p>
-            © 2026 Monjhara McKinney. All rights reserved.
-        </p>
-    </footer>
-
+    <footer><p>© 2026 Monjhara McKinney. All rights reserved.</p></footer>
 </body>
 </html>

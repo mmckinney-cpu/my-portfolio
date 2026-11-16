@@ -126,7 +126,7 @@ main {
 #hero p:not(.eyebrow) { max-width: 660px; margin: 0 auto var(--space-4); }
 
 .eyebrow {
-    color: #9A6A20;
+    color: #805313;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.12em;

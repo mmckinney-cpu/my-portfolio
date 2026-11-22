@@ -89,7 +89,7 @@
             const reason = form.querySelector('input[name="reason"]:checked').value;
             const message = document.getElementById('contact-message').value.trim();
             const subject = encodeURIComponent('Portfolio contact: ' + reason);
-            const body = encodeURIComponent('Name: ' + name + '\\nEmail: ' + email + '\\nReason: ' + reason + '\\n\\n' + message);
+            const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nReason: ' + reason + '\n\n' + message);
             document.getElementById('form-status').textContent = 'Your email application should open with a draft. Please send it there to finish.';
             window.location.href = 'mailto:monjharam@yahoo.com?subject=' + subject + '&body=' + body;
         });

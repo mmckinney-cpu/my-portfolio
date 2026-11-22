@@ -237,3 +237,19 @@ footer p { margin: 0; }
     .project-card { padding: var(--space-3); }
     footer { padding: var(--space-3); }
 }
+
+/* Accessible contact form: labels, visible focus and inline validation */
+.form-field { margin-bottom: var(--space-3); }
+.form-field label, fieldset legend { display: block; font-weight: 700; margin-bottom: var(--space-1); }
+.form-field input, .form-field textarea {
+    display: block; width: 100%; padding: 12px; font: inherit; color: var(--text);
+    background: var(--surface); border: 2px solid var(--primary); border-radius: 8px;
+}
+.form-field input:focus-visible, .form-field textarea:focus-visible, .radio-choice input:focus-visible {
+    outline: 3px solid #805313; outline-offset: 3px;
+}
+.form-field [aria-invalid="true"] { border-color: #A12626; }
+.field-error { color: #A12626; font-weight: 600; margin: 4px 0 0; }
+fieldset { border: 2px solid var(--border); border-radius: 8px; padding: var(--space-2); margin: 0 0 var(--space-3); }
+.radio-choice { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+button.button { font: inherit; cursor: pointer; }
